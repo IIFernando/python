@@ -19,4 +19,5 @@ while condicao:
 while contador <= 10:
     print(contador)
     contador += 1
-print('Acabou')
+else:
+ print('Else foi executado')

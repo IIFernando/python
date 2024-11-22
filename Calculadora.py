@@ -33,5 +33,3 @@ while True:
     n2 = int(input('Informe o segundo numero: '))
 
     print(f'O calculo entre {n1} e {n2} é {calculator(op, n1, n2)}')
-
-
