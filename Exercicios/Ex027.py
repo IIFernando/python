@@ -7,7 +7,6 @@ inserir, apagar e listar valores da lista.
 lista = []
 
 while True:
-
     opcao = input('[I]nserir [A]pagar [L]istar [S]air: ').upper()
 
     if opcao == 'I':
@@ -16,13 +15,14 @@ while True:
 
     elif opcao == 'A':
         posicao = int(input('Insira a posicao: '))
-        if posicao not in lista:
-            print('Posição inválida')
-        else:
+        if len(lista) >= posicao:
             lista.pop(posicao)
+            print('Removido da lista')
+        else:
+            print('Posição inválida')
 
     elif opcao == 'L':
-        if not lista:
+        if len(lista) == 0:
             print('Nenhum item encontrado na lista')
         else:
             for item in enumerate(lista):
